@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="profile.css" type="text/css" rel="stylesheet">
+<style>
+    
+    body {
+        background-image: url(bgim.jpg);
+        align-content: center;
+    }
+    
+
+    
+    /* top menu */
+    body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+    
+    /* sticky */
+        div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: #cae8ca;
+  border: 2px solid #4CAF50;
+}
+    /* invsiible button */
+    .button {     
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:grabbing;
+    overflow: hidden;        
+}
+    
+    .op {
+    
+    opacity: .01;
+   
+}
+
+    button{
+        width: 50px;
+        height: 70px;
+    }
+    
+    div.cellphone {
+    position: absolute;
+    right: 775px;
+    top: 49px;
+}
+    
+     div.email {
+    position: absolute;
+    right: 295px;
+    top: 40px;
+}
+    
+    div.fax {
+    position:absolute;
+    right: 240px;
+    top: 237px;
+ }
+    div.social {
+        position:absolute;
+        right: 317px;
+        top: 430px;
+    }
+    
+    div.mail {
+        position:absolute;
+        right:830px;
+        top:232px;
+    }
+    
+    div.loc {
+        position:absolute;
+        right:760px;
+        top:420px;
+    }
+    
+    
+    alert {
+        position: absolute;
+        right: 500px;
+        top: 430px;
+    }
+   
+    canvas {
+        position: absolute;
+        right: 230px;
+        top: 40px;
+    }
+</style>
+
+</head>
+
+<body> 
+    
+    <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="profile.html">Home</a>
+  <a href="#">News</a>
+  <a href="courses.html">Site Usability</a>
+  <a href="completedprojects.html">Completed Projects</a>
+  <a href="contact.tml">Contact Me</a>
+</div>
+    
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+    
+    <div class="email"> <a onclick="alert('239-677-1008')"><img src="mail.png" alt="email logo" width=200px height=200px></a> </div>
+    
+    <div class="loc"> <a onclick="alert('Places of Operation Lee and Collier Cunties. We are currently expanding to toher areas in South West Florida.')"> <img src="location.png" alt="location map logo" width=150px height=150px></a></div>
+        
+    <div class="fax"> <a onclick="alert('239-590-7304')"> <img src="fax.png" alt="fax logo" width=150px height=150px></a> </div>
+     
+    <div class="cellphone"> <a onclick="alert('239-677-1008')"> <img src="phone.png" alt="Cellphone logo" width=150px height=150px> </a> </div>
+    
+    <div class="social"> <a onclick="alert('instagram- oscar_garcia_')"> <img src="socialmedia.png" alt="social media logo" width=150px height=150px> </a> </div>
+    
+    <div class="mail"> <a onclick="alert('FLORIDA GULF COAST UNIVERSITY 10501 FGCU Boulevard South Fort Myers, FL 33965-6565')"> <img src="email.png" alt="mail logo" width=150px height=150px></a></div>
+        
+   
+    <canvas id="myCanvas" width="750" height="550" style="border:5px solid #000000;">
+
+</canvas>
+    
+    
+    
+<script>
+    
+    function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+    
+    
+</script>
+
+</body>
