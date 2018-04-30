@@ -1,0 +1,27 @@
+.x{
+   float: right; 
+  background-position: right;
+}
+
+.z{
+    float:left;
+}
+
+
+.w{
+    align-content: center;
+}
+
+.c{
+    align-content: center;
+}
+
+.bg{
+    background-color: ghostwhite;
+}
+
+.tb{
+    width:300;
+    height:300;
+    text-align: center;
+}
