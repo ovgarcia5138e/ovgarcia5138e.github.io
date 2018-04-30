@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<style>
+    
+    body {
+        background-image:url("http://www.pngmart.com/files/5/Work-PNG-File.png");
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    /* top menu */
+    body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+    
+    /* sticky */
+        div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: #cae8ca;
+  border: 2px solid #4CAF50;
+}
+    /* invsiible button */
+    .button {     
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:grabbing;
+    overflow: hidden;        
+}
+    
+    /* table */
+    
+    table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: blue;
+}
+
+    tr:nth-child(odd) {
+        background-color: green;
+    }
+    
+    /* alignment */
+        div.a {
+            text-align: center;
+            
+            }	
+            
+           div.b{
+               text-align: center;
+               background-color:aliceblue;
+               width: 500px;
+                object-position: center;
+            }
+            
+            div.c {
+                text-align: right;
+            }
+            
+            div.d {
+                text-align: justifyjust; 
+            }
+</style>
+    
+    </head>
+    
+<body>
+    
+     <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="profile.html">Home</a>
+  <a href="#">News</a>s
+  <a href="courses.html">Site Usability</a>
+  <a href="completedprojects.html">Completed Projects</a>
+  <a href="contact.tml">Contact Me</a>
+</div>
+    
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+    
+   
+    <div class="a"> <h1>Website Accessibility and Usability.</h1></div>
+    
+    <div class="b"> <h2>Quick Overview</h2></div>
+    
+    <div class="b"><ul>
+        
+    <li>Links</li>
+    <li>Document Strucutre</li>
+    <li>Text Size</li>
+    <li>Browser Compatibility</li>
+    <li>Continuously Improving</li>
+        
+    </ul></div>
+    
+    <div class="b"> <h2>links</h2></div>
+    
+    <div class="b"><p>Throughout the website there are various links that transport the user to other pages on our website. Or transport the user to another website that provides the user with the specified information or to other documents or completed projects. </p></div>
+    
+    <div class="b">Document Structure</div>
+    
+    <div class="b"><p>At Garcia Technologies we have designed this website with clarity, and efficeny in mind for the users. We have included a navigation bar that is readily accessibly to the user in order to manuver throught the webiste with easy. Each Page begins with a descriptive title that accurately describes the content of the page. </p></div>
+    
+    <div class="b"><h2>Text Size</h2></div>
+    
+    <div class="b"><p>The text size on all pages of our website are sized in order to provide a facilitated reading and viewing opportunity.</p></div>
+    
+    <div class="b"><h2>Browser Compatibility</h2></div>
+    
+    <div class="b"><p>For the broswer compatibiliy Garcia Technologies is currently allowing for the basic elements of our coding structure to be viewable in a linear html format for those browsers that do not support CSS attributes. We are currently working on desining methods for our users to download the proper browser to enhance their experience. As far as users that have browsers that fully support CSS they will have access to the data, and characteristics, that are used to asthetically enhance the users experince on our site.</p></div>
+    
+    <div class="b"><h2>Contiuously Improving</h2></div>
+    
+    <div class="b"><p>Garcia Technologies is constantly improving our asetheic apperance, and functionality of our site. Please excuse our progress.</p></div>
+    
+    <script>
+    
+    function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+    
+    
+</script>
+    
+</body>
+
+
+    
+</html>
