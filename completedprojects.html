@@ -127,6 +127,28 @@
     background-attachment: fixed;
     resize: inherit;
 }
+        #box {
+            border: 10px solid white;
+            background:silver;
+            position: fixed;
+            bottom:236px;
+            left: 57px;
+            height:230px;
+            width: 220px;
+            position: relative;
+            
+            
+        }
+        
+        #pic {
+            border: 10px solid white;
+            background: clear;
+            position:fixed;
+            height:587px;
+            width:520px;
+            position:relative;
+            
+        }
         
     </style>
     </head>
@@ -170,8 +192,87 @@
         </a> </div>
 </div>
     
+    <div id="box">
+    <!--Caesar cipher-->
+
+                    <div class="caesarCipher">
+
+                        <ul>
+
+                            <li><h4>Caesar Cipher</h4></li>
+
+                        </ul>
+
+                        <p>Input a text:</p>
+
+
+
+
+                        <input id="in">
+
+
+
+
+                        <button type="button" onclick="encode()">Encode</button>
+
+                        
+
+                        <p id="out"></p>
+
+                        <script>
+
+                            function encode() {
+
+                                var inVar, asciiCode, encryptedText = "";
+
+                                var index;
+
+
+
+                                // Input
+
+                                inVar = document.getElementById("in").value;
+
+
+
+                                // Processing
+
+                                for (index = 0; index < inVar.length; index++) {
+
+                                        asciiCode = inVar.charCodeAt(index);
+
+                                    if ((asciiCode >= 65 && asciiCode <= 90) || (asciiCode >= 97 && asciiCode <= 122)) {
+
+                                        asciiCode = asciiCode + 3;
+
+                                    }
+
+                                        encryptedText += String.fromCharCode(asciiCode);
+
+                                }
+
+
+
+                                // Output
+
+                                document.getElementById("out").innerHTML = 'Encoded text: ' + encryptedText;
+
+                            }
+
+                        </script>
+
+                    </div>
+    </div>
     
+    <br>
+    <center>
+    <div id="pic">
+   
+    <h2>Custom Designed Drone.</h2>
+    <img src="drone.png" width=500 height=500 position=center>
     
+    </div>
+    </center>
     
 <script>
     function myFunction() {
