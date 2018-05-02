@@ -11,7 +11,6 @@
     }
     
 
-    
     /* top menu */
     body {
     font-family: "Lato", sans-serif;
@@ -86,52 +85,64 @@
     }
     
     div.cellphone {
-    position: absolute;
+    position: fixed;
     right: 775px;
     top: 49px;
 }
     
      div.email {
-    position: absolute;
+    position: fixed;
     right: 295px;
     top: 40px;
 }
     
     div.fax {
-    position:absolute;
+    position:fixed;
     right: 240px;
     top: 237px;
  }
     div.social {
-        position:absolute;
+        position:fixed;
         right: 317px;
         top: 430px;
     }
     
     div.mail {
-        position:absolute;
+        position:fixed;
         right:830px;
         top:232px;
     }
     
     div.loc {
-        position:absolute;
+        position:fixed;
         right:760px;
         top:420px;
     }
     
     
     alert {
-        position: absolute;
+        position: fixed;
         right: 500px;
         top: 430px;
     }
    
     canvas {
-        position: absolute;
+        position: fixed;
         right: 230px;
         top: 40px;
     }
+    
+    #tbox {
+    position: fixed;
+    right: 220px;
+    top: 30px;
+    border: 10px solid black;
+    padding:3px;
+    width: 750px;
+    height: 550px;
+    
+}
+    
 </style>
 
 </head>
@@ -149,6 +160,7 @@
     
     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
     
+    <div id="tbox">
     <div class="email"> <a onclick="alert('239-677-1008')"><img src="mail.png" alt="email logo" width=200px height=200px></a> </div>
     
     <div class="loc"> <a onclick="alert('Places of Operation Lee and Collier Cunties. We are currently expanding to toher areas in South West Florida.')"> <img src="location.png" alt="location map logo" width=150px height=150px></a></div>
@@ -160,12 +172,8 @@
     <div class="social"> <a onclick="alert('instagram- oscar_garcia_')"> <img src="socialmedia.png" alt="social media logo" width=150px height=150px> </a> </div>
     
     <div class="mail"> <a onclick="alert('FLORIDA GULF COAST UNIVERSITY 10501 FGCU Boulevard South Fort Myers, FL 33965-6565')"> <img src="email.png" alt="mail logo" width=150px height=150px></a></div>
-        
    
-    <canvas id="myCanvas" width="750" height="550" style="border:5px solid #000000;">
-
-</canvas>
-    
+    </div>
     
     
 <script>
@@ -178,6 +186,7 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
     
+   
     
 </script>
 
