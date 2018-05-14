@@ -369,6 +369,26 @@
         <button onclick="newProduct()">Create Product/Service</button> <br>
 <p id="space">
     </left>
+    
+    <center>
+        <br>
+    
+    <form>
+    Select Product:
+    <select id="mySelect">
+        <option>Chicken noodle soup</option>
+        <option>Apple Pie</option>
+        <option>Chicken Pot Pie</option>
+        <option>Cherry Pie</option>
+        <option>Banana Nut Bread</option>
+        </select>
+    <br><br>
+    <input type="button" onclick="getOption()" value="Click Me!">
+    </form>
+    
+    <p id="demo"></p>
+    </center>
+    
 <script>
     function myFunction() {
     var x = document.getElementById("myTopnav");
@@ -401,6 +421,12 @@ var miles=[];
     document.getElementById("space").innerHTML = "Lets name your new product.";
    
 }
+   // scroll down menu
+        function getOption() {
+            var obj = document.getElementById("mySelect");
+            document.getElementById("demo").innerHTML =
+                obj.options[obj.selectedIndex].text;
+        }
 </script>
     
     </body>
