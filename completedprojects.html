@@ -365,6 +365,10 @@
     <div id="rub">
         <p>Being an active runner means deciding on a distance to run. To solve this problem I designed a program that gives me a distance to run that is anywhere from half a mile up to eight miles. The distances given are in quater mile intervals from half a mile to eight miles. Try it out, press the how far button and go for a run. </p></div></center>
     
+    <left>
+        <button onclick="newProduct()">Create Product/Service</button> <br>
+<p id="space">
+    </left>
 <script>
     function myFunction() {
     var x = document.getElementById("myTopnav");
@@ -388,6 +392,15 @@ var miles=[];
                 miles.pop(n);
                 console.log(miles.length);
             }
+    
+    function newProduct() {
+    var x = document.createElement("INPUT");
+    x.setAttribute("type", "text");
+    x.setAttribute("placeholder", "Product/Service Name");
+    document.body.appendChild(x);
+    document.getElementById("space").innerHTML = "Lets name your new product.";
+   
+}
 </script>
     
     </body>
