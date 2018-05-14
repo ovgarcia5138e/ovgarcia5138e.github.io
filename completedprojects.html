@@ -364,14 +364,17 @@
     <center>
     <div id="rub">
         <p>Being an active runner means deciding on a distance to run. To solve this problem I designed a program that gives me a distance to run that is anywhere from half a mile up to eight miles. The distances given are in quater mile intervals from half a mile to eight miles. Try it out, press the how far button and go for a run. </p></div></center>
+    </center>
     
     <left>
         <button onclick="newProduct()">Create Product/Service</button> <br>
 <p id="space">
     </left>
     
+    <br>
+   
+    
     <center>
-        <br>
     
     <form>
     Select Product:
@@ -389,6 +392,9 @@
     <p id="demo"></p>
     </center>
     
+    <center>
+        <div id="result"></div>
+    </center>
 <script>
     function myFunction() {
     var x = document.getElementById("myTopnav");
@@ -427,6 +433,21 @@ var miles=[];
             document.getElementById("demo").innerHTML =
                 obj.options[obj.selectedIndex].text;
         }
+    
+    // counting
+    function clickCounter() {
+        if (typeof(Storage) !== "undefined") {
+            if (sessionStorage.clickcount) {
+                sessionStorage.clickcount =
+                    Number(sessionStorage.clickcount)+1;
+            } else {
+                sessionStorage.clickcount = 195;
+            } 
+            document.getElementById("result").innerHTML = "Order Numner " + sessionStorage.clickcount;
+        } else {
+            document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+        }
+    }
 </script>
     
     </body>
